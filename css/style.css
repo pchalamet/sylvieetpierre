@@ -46,8 +46,8 @@ html,body{
 
 .bearnlogo{
     position:fixed;
-    top:10%;
-    right:5%;
+    top:10px;
+    right:20px;
     width:150px;
     /* margin-top:-41px;
     margin-left:-223px; */
@@ -60,8 +60,8 @@ html,body{
 
 .erablelogo{
     position:fixed;
-    top:10%;
-    left:5%;
+    top:10px;
+    right:150px;
     width:150px;
     /* margin-top:-41px;
     margin-left:-223px; */
@@ -116,6 +116,20 @@ html,body{
 	cursor:pointer;
 }
 
+.gmap {
+    border:0;
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    left: 20px;
+    bottom: 20%;
+    -webkit-filter: drop-shadow(20px 20px 25px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=20, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=20, Color='#444')";
+    border: 2px solid #ffffff;
+}
+
 /******************************
  SLIDE 1 
 *******************************/
@@ -156,19 +170,45 @@ html,body{
 	color:rgba(51,51,51,0.3);
 }
 
+
 /******************************
- SLIDE 4 
+ SLIDE 3
 *******************************/
 
 #slide3{
-	background-image:url(../images/sylviepierre.JPG);
+	background-image:url(../images/cabane.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+    position:relative;
 }
 #slide3 .parallaxbg{
+	position:absolute;
+	right:40px;
+	top:40px;
+	font-size:28px;
+	color:rgba(51,51,51,0.3);
+}
+
+
+
+
+/******************************
+ SLIDE 4 
+*******************************/
+
+#slide4{
+	background-image:url(../images/sylviepierre.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+    position:relative;
+}
+#slide4 .parallaxbg{
 	position:absolute;
 	right:40px;
 	top:40px;
